@@ -13,6 +13,7 @@ body{
 }
 .container{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     margin: 20px auto;
     box-shadow: 1px 1px 15px 1px #b2afad;
@@ -21,6 +22,7 @@ body{
 }
 .profil{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
     width: 70%;
@@ -71,6 +73,11 @@ li{
     color: #777171; 
 }
 /* aside */
+figure{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
 img{
     width: 80%;
     border-radius: 50%;
@@ -88,6 +95,11 @@ h1{
     color: white;
     margin: 10px 0;
     font-size: 1.9rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
 }
 .contact{
     width: 100%;
@@ -125,3 +137,61 @@ i{
 .spanKercode{
     font-weight: bold;
 }
+
+@media screen and (max-width:600px) {
+    body{
+        max-width: 580px;
+        width: 100%;
+    }
+    .profil{
+        width: 100%;
+    }
+    .infos{
+        width: 100%;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+    p, li,.contactInfo{
+        font-size: 0.8rem;
+    }
+    h3{
+        font-size: 0.9rem;
+    }
+    img{
+        width: 30%;
+    }
+    .nom{
+        width: 50%;
+        margin: 50px 0;
+    }
+}
+    @media screen and (max-width:884px) {
+        body{
+            max-width: 884px;
+            width: 100%;
+        }
+
+        h1{
+            font-size: 1.5rem;
+        }
+        h2{
+            font-size: 1.3rem;
+        }
+        p, li,.contactInfo{
+            font-size: 0.8rem;
+        }
+        h3{
+            font-size: 0.9rem;
+        }
+
+    
+    
+
+
+}
+
+
